@@ -47,20 +47,20 @@
       <div class="col-sm-6">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150507.90693121048!2d27.57964826450467!3d53.88400923346728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2sMinsk!5e0!3m2!1sen!2sby!4v1561978286119!5m2!1sen!2sby" width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <div class="col-sm-6">
+      <form class="sendForm col-sm-6" method="post" enctype="text/plain">
         <div class="row">
           <div class="col-sm-12 form-group">
-            <input class="form-control" name="name" placeholder="NAME" type="text" required>
+            <input class="sendForm_subject form-control" name="name" placeholder="NAME" type="text" required>
           </div>
           <div class="col-sm-12 form-group">
-            <input class="form-control" name="email" placeholder="EMAIL" type="email" required>
+            <input class="sendForm_email form-control" name="email" placeholder="EMAIL" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" name="message" placeholder="MESSAGE" type="text" rows="10" required></textarea>
+        <textarea class="sendForm_message form-control" name="message" placeholder="MESSAGE" rows="10" required></textarea>
         <br/>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default btn-block" type="submit">SEND</button>
+            <button class="sendForm_submitButton btn btn-default btn-block" type="submit">SEND</button>
           </div>
         </div>
         <br/>
@@ -69,7 +69,7 @@
           <br/>
           <i class="fa fa-envelope-o"></i> irookanji@gmail.com
         </div>
-      </div>
+      </form>
     </div>
 
   </div>
@@ -78,6 +78,8 @@
     <a href="#home"><i class="fa fa-chevron-up"></i></a>
     <br/>&copy; Bakhtiyar Zubairov <i class="fa fa-copyright"></i> 2019
   </footer>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
